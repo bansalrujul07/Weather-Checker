@@ -1,12 +1,12 @@
 # Weather-Checker
 This is a Weather App, made using React. It gives you the temperature,humidity of every city. 
 The following criteria to be fullfilled:
- # API integration works
- # State management correct
- # Interactivity implemented
- # Conditional rendering
- # UI clarity & structure
- # Code readability
+ * API Integeration Works
+ * State Management correct
+ * Interactivity implemented
+ * Conditional Rendering
+ * UI clarity and structure
+ * Code readability 
 
 The learning outcomes from this project were : 
  - Error Handling
