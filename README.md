@@ -1,36 +1,30 @@
-<<<<<<< HEAD
 # Weather-Checker
-This is a Weather App, made using React. It gives you the temperature,humidity of every city. 
-The following criteria to be fullfilled:
- * API Integeration Works
- * State Management correct
- * Interactivity implemented
- * Conditional Rendering
- * UI clarity and structure
- * Code readability 
 
-The learning outcomes from this project were : 
- - Error Handling
- - Controlled Inputs
- - Effect dependencies
- - Api data fetch
- - how different states are used
- - Conditional Rendering 
-=======
-# React + Vite
+A Weather App in React + Vite. It shows temperature, humidity, and condition for a searched city using OpenWeatherMap API.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Setup
 
-Currently, two official plugins are available:
+1. Create `.env` from `.env.example`:
+   - `cp .env.example .env`
+2. Put your API key:
+   - `VITE_OPENWEATHER_API_KEY=YOUR_API_KEY`
+3. Install dependencies:
+   - `npm install`
+4. Run dev server:
+   - `npm run dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Environment
 
-## React Compiler
+- `VITE_OPENWEATHER_API_KEY` is used in `src/App.jsx` to call OpenWeatherMap.
+- `.gitignore` includes `.env`, `.env.local`, `.env.*.local` so secrets are not committed.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Build
 
-## Expanding the ESLint configuration
+- `npm run build`
+- `npm run preview`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 42413d6 (Initial Commit)
+## Notes
+
+- Keep `.env` private and do not commit it.
+- Use GitHub Actions secrets / pipeline env variables for production builds.
+
