@@ -46,9 +46,9 @@ function App() {
 
       setWeather(weatherData);
 
-      //Add searched city to the top(Only recent 5 searches)
+      //Add the recent searched city to the top(Only recent 5 searches)
       const newHistory = [data.name, ...history.filter(c => c !== data.name)];
-      setHistory(newHistory.slice(0, 5)); // Keep last 5 searches
+      setHistory(newHistory.slice(0, 5)); //slice - to keep last 5 searches
       localStorage.setItem("searchHistory", JSON.stringify(newHistory.slice(0, 5)));
     } catch (err) {
       setError(err.message);
@@ -78,7 +78,7 @@ function App() {
       setUnit(prev => (prev === "C" ? "F" : "C"));
     };
 
-    //return based on weather condition
+    //return icon based on weather condition
     const getWeatherIcon = (condition) => {
       switch (condition) {
         case "Clear": return "☀️";
