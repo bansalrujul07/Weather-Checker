@@ -11,15 +11,15 @@ function App() {
   const [unit, setUnit] = useState("C");              //Temperature Units 
   const [history, setHistory] = useState([]); // Store last searched cities
 
-  const api_key = import.meta.env.VITE_OPENWEATHER_API_KEY;
+  const api_key = import.meta.env.VITE_WEATHER_API_KEY;
   if (!api_key) {
-    console.warn('VITE_OPENWEATHER_API_KEY is not set in environment variables');
+    console.warn('VITE_WEATHER_API_KEY is not set in environment variables');
   }
 
   // Fetch weatherData for a city
   const fetchWeather = async (cityName) => {
     if (!api_key) {
-      setError('API key not found. Please add VITE_OPENWEATHER_API_KEY to .env');
+      setError('API key not found. Please add VITE_WEATHER_API_KEY to .env');
       return;
     }
     try {
